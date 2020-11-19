@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    {% block head %} {% endblock %}
+</head>
+
+<body>
+    <div class="row ">
+        <div class="col-6 input-group">
+            <img src="data:image/png;base64,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"
+                alt="logo" height="60px" width="70px" class="pt-3 ml-3">
+            <h3 class="col-6 pt-3 text-secondary">Sky Drive</h3>
+        </div>
+        <div class="col-6 mt-3 " name="menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <a class="navbar-brand text-secondary" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand text-secondary" href="#">About</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand text-secondary" href="/upload">Upload</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <form class="form-inline" action="/search" method="POST">
+                    <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search Photographer"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </nav>
+
+        </div>
+
+    </div>
+    <br><br><br>
+
+    {% block body %}
+    {% endblock %}
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

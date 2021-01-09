@@ -8,8 +8,10 @@
 {% block body %}
 
 
-<form action="/insert" method="POST">
+<form action="/insert" method="POST" enctype="multipart/form-data">
     <center>
+
+
         <div class="form-group mx-sm-3 mb-2 col-6">
             <label for="exampleInputEmail1">Pic Captured by</label>
             <input type="text" class="form-control" name="owner" id="exampleInputFile1" placeholder="Picture Credit">

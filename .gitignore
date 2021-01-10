@@ -1,2 +1,5 @@
 .env
-pyvenv.cfg
+venv
+
+.vscode
+

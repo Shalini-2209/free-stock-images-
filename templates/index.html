@@ -9,12 +9,12 @@
 <div class="container">
 
     <div class="row">
-
+        
         {% for doc in documents %}
 
         <div class="col-4">
             <div class="card">
-                <img src="static/images/{{doc.img_src}}" width="350" height="300" class="card-img-top" alt="...">
+                <img src="static/images/{{doc.filename}}" width="350" height="300" class="card-img-top" alt="...">
                 <div class="card-body">
                     <span class="muted">Posted by {{doc.owner.upper()}} </span>
                     <a class="btn btn-danger float-right" href="/delete/{{doc._id}}">Delete</a>

@@ -16,7 +16,13 @@
             <div class="card">
                 <img src="static/images/{{doc.filename}}" width="350" height="300" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <span class="muted">Posted by {{doc.owner.upper()}} </span>
+                    
+                    {% if doc.owner %}
+                        <span class="muted">Posted by {{doc.owner.upper()}} </span>    
+                    {% else %}
+                        <span class="muted">Posted by Anonymous </span>
+                    {% endif %}
+
                     <a class="btn btn-danger float-right" href="/delete/{{doc._id}}">Delete</a>
                 </div>
             </div>
